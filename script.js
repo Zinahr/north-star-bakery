@@ -12,14 +12,19 @@ const validationMessages = {
   details: "Please enter at least 10 characters describing your request."
 };
 
+const storageKeys = {
+  favorites: "bakeryFavorites",
+  customerName: "customerName"
+};
+
+
 function getFavorites() {
-  return JSON.parse(localStorage.getItem("bakeryFavorites")) || [];
+  return JSON.parse(localStorage.getItem(storageKeys.favorites)) || [];
 }
 
 function saveFavorites(favorites) {
-  localStorage.setItem("bakeryFavorites", JSON.stringify(favorites));
+  localStorage.setItem(storageKeys.favorites, JSON.stringify(favorites));
 }
-
 function updateFavoritesDisplay() {
   const favoritesList = document.getElementById("favorites-list");
 
@@ -119,7 +124,7 @@ function saveCustomerName() {
   const name = document.getElementById("name");
 
   if (name && name.value.trim() !== "") {
-    localStorage.setItem("customerName", name.value.trim());
+    localStorage.setItem(storageKeys.customerName, name.value.trim());
   }
 }
 
@@ -130,8 +135,7 @@ function loadCustomerName() {
     return;
   }
 
-  const savedName = localStorage.getItem("customerName");
-
+  const savedName = localStorage.getItem(storageKeys.customerName);
   if (savedName) {
     name.value = savedName;
   }

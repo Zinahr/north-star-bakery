@@ -107,9 +107,12 @@ function validateContactForm(event) {
     isValid = false;
   }
 
-  if (!isValid) {
-    event.preventDefault();
-  }
+  event.preventDefault();
+
+if (isValid) {
+  alert("Thank you! Your request has been received.");
+  form.reset();
+}
 }
 
 function saveCustomerName() {

@@ -115,9 +115,14 @@ function validateContactForm(event) {
   event.preventDefault();
 
 if (isValid) {
-  alert("Thank you! Your request has been received.");
+  clearError(name);
+  clearError(email);
+  clearError(details);
   form.reset();
-}
+
+  setTimeout(function () {
+    alert("Thank you! Your request has been received.");
+  }, 100);
 }
 
 function saveCustomerName() {

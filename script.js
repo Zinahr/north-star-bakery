@@ -147,7 +147,7 @@ function loadCustomerName() {
 }
 
 function setupContactForm() {
-  const form = document.querySelector("form");
+  const form = document.getElementById("contact-form");
   const name = document.getElementById("name");
 
   if (!form) {

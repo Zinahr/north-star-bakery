@@ -36,23 +36,38 @@
     <section class="section">
       <div class="container product-layout">
         <div class="product-list">
-          <article class="card">
-            <h2>Breads</h2>
-            <p>Classic sourdough, honey oat, multigrain, and rotating seasonal loaves.</p>
-            <p class="price">$6–$12</p>
-          </article>
-          <article class="card">
-            <h2>Pastries</h2>
-            <p>Croissants, fruit turnovers, cinnamon rolls, muffins, and seasonal pastries.</p>
-            <p class="price">$3–$7</p>
-          </article>
-          <article class="card">
-            <h2>Cakes</h2>
-            <p>Simple celebration cakes and custom designs for birthdays, showers, offices, and family gatherings.</p>
-            <p class="price">$28–$85+</p>
-          </article>
-        </div>
-        <img class="product-photo" src="media/bakery-bread_c.png" alt="Fresh artisan bread loaves arranged at North Star Bakery">
+  <article class="card">
+    <h2>Breads</h2>
+    <p>Classic sourdough, honey oat, multigrain, and rotating seasonal loaves.</p>
+    <p class="price">$6–$12</p>
+    <button class="favorite-button" data-product="Breads">
+      Save as Favorite
+    </button>
+  </article>
+
+  <article class="card">
+    <h2>Pastries</h2>
+    <p>Croissants, fruit turnovers, cinnamon rolls, muffins, and seasonal pastries.</p>
+    <p class="price">$3–$7</p>
+    <button class="favorite-button" data-product="Pastries">
+      Save as Favorite
+    </button>
+  </article>
+
+  <article class="card">
+    <h2>Cakes</h2>
+    <p>Simple celebration cakes and custom designs for birthdays, showers, offices, and family gatherings.</p>
+    <p class="price">$28–$85+</p>
+    <button class="favorite-button" data-product="Cakes">
+      Save as Favorite
+    </button>
+  </article>
+
+  <div class="favorites-box">
+    <h2>Your Favorites</h2>
+    <p id="favorites-list">You have not saved any favorites yet.</p>
+  </div>
+</div>
       </div>
     </section>
 
@@ -82,5 +97,6 @@
       <a href="contact.html">Pre-Orders & Inquiries</a>
     </div>
   </footer>
+<script src="script.js"></script>
 </body>
 </html>

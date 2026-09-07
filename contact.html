@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="North Star Bakery home">
+        <img src="media/bakery-logo.png" alt="North Star Bakery logo">
+        <span>North Star Bakery</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Questions, celebrations, and pre-orders</p>
+        <h1>Contact North Star Bakery</h1>
+        <p>Use the form below to request a pre-order or send a general question. We will follow up to confirm availability and details.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <form class="contact-form" action="#" method="post">
+          <fieldset class="form-section">
+            <legend>Customer Information</legend>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required minlength="2">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pickup-date">Pickup Date</label>
+              <input type="date" id="pickup-date" name="pickup-date" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Request Details</legend>
+
+            <div class="form-group">
+              <label for="request-type">Request Type</label>
+              <select id="request-type" name="request-type" required>
+                <option value="">Select one</option>
+                <option value="pre-order">Pre-Order</option>
+                <option value="celebration-cake">Celebration Cake</option>
+                <option value="event-order">Event Order</option>
+                <option value="general-question">General Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="item-details">Item Details</label>
+              <textarea id="item-details" name="item-details" rows="5" minlength="10" placeholder="Tell us what you would like to order or ask about." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="allergy-notes">Allergy Notes, if applicable</label>
+              <textarea id="allergy-notes" name="allergy-notes" rows="3" placeholder="List any allergy-related concerns or write N/A."></textarea>
+            </div>
+          </fieldset>
+
+          <button class="button full-width" type="submit">Send Request</button>
+        </form>
+
+        <aside class="info-card">
+          <h2>Visit Us</h2>
+          <p><strong>North Star Bakery</strong></p>
+          <p>Neighborhood location near local homes, businesses, and commuter routes.</p>
+          <h3>Hours</h3>
+          <p>Monday–Friday: 6:30 a.m.–6:00 p.m.</p>
+          <p>Saturday: 7:00 a.m.–4:00 p.m.</p>
+          <p>Sunday: 8:00 a.m.–2:00 p.m.</p>
+          <h3>Pre-Order Tip</h3>
+          <p>For cakes and larger orders, contacting us several days early gives the bakery more time to confirm ingredients, design needs, and pickup timing.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 North Star Bakery. Handmade with care for our community.</p>
+      <a href="products.html">View Products</a>
+    </div>
+  </footer>
+</body>
+</html>

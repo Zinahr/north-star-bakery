@@ -35,7 +35,7 @@
 
     <section class="section">
       <div class="container contact-grid">
-       <form id="contact-form" class="contact-form" novalidate> 
+       <form id="contact-form" class="contact-form" novalidate onsubmit="event.preventDefault(); validateContactForm(event); return false;"> 
         
         
           <fieldset class="form-section">

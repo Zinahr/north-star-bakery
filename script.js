@@ -121,8 +121,11 @@ if (isValid) {
   form.reset();
 
   setTimeout(function () {
-    alert("Thank you! Your request has been received.");
-  }, 100);
+  clearError(name);
+  clearError(email);
+  clearError(details);
+  alert("Thank you! Your request has been received.");
+}, 100);
 }
 }
 function saveCustomerName() {

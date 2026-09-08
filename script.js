@@ -124,7 +124,7 @@ if (isValid) {
     alert("Thank you! Your request has been received.");
   }, 100);
 }
-
+}
 function saveCustomerName() {
   const name = document.getElementById("name");
 

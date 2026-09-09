@@ -407,10 +407,26 @@ textarea:focus {
   }
 }
 @media (max-width: 759px) {
-  .header-inner {
+  html,
+  body {
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container,
+  .header-inner,
+  .hero-grid {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .header-inner {
+    align-items: center;
   }
 
   .brand {
@@ -425,26 +441,33 @@ textarea:focus {
 
   .nav-list {
     width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
   }
 
   .nav-list a {
-    padding: 0.5rem 0.6rem;
+    text-align: center;
+    padding: 0.5rem;
     font-size: 0.95rem;
   }
 
   .hero-grid {
-    width: 92%;
-    overflow: hidden;
+    overflow: visible;
+  }
+
+  .hero-grid > * {
+    width: 100%;
+    min-width: 0;
   }
 
   h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     overflow-wrap: break-word;
   }
 
   .hero-image {
+    width: 100%;
     min-height: 0;
     height: auto;
   }

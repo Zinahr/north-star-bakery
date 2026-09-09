@@ -472,3 +472,35 @@ textarea:focus {
     height: auto;
   }
 }
+@media (max-width: 759px) {
+  .hero-grid {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: hidden;
+  }
+
+  .hero-grid > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-copy h1,
+  .hero-copy p,
+  .eyebrow {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .hero-copy h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+}
